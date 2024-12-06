@@ -91,3 +91,11 @@ where cast(p.price as decimal) > 3;
 
 select * from cus_name
 where gender ='M'  AND phone_number ISnull
+
+---10.FROM THE PRODUCTS TABLE, SELECT THE NAME AND PRICE OF ALL PRODUCTS WITH A COFFEE ORIGIN EQUAL TO COLUMBIA OR INDONESIA. SORT THE RESULTS BY NAME A-Z-----
+
+select name , price from product_coffee
+where coffee_origin='Colombia' or  coffee_origin='Indonesia'
+order by 1 asc
+
+
